@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem dos personagens</title>
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img class="icon" src="./src/assets/RICK_MORTY_ICON.png" alt="Rick and Morty icon" srcset="">
+        <h1>API de Rick and Morty</h1>
+    </div>
+
+    <form>
+        <input type="text" id="searchInput" placeholder="Buscar">
+    </form>
+
+    <div class="card_container">
+        <div id="character_cards"></div>
+    </div>
+
+    <div class="pagination">
+        <button onclick="decreasePage()">Anterior</button>
+        <div id="buttons"></div>
+        <button onclick="increasePage()">Próximo</button>
+    </div>
+
+    <div class="rick_morty_image_container">
+        <img class="rick_morty_image" src="./src/assets/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png"
+            alt="Rick and Morty">
+    </div>
+
+    <div id="characters"></div>
+
+    <div class="footer">
+        <p class="p">
+            <span class="span" id="character"></span>
+            <span class="span" id="location"></span>
+            <span class="span" id="episode"></span>
+        </p>
+    </div>
+
+    <footer>
+        Desenvolvido por: <a href="https://github.com/AlanRothmann"><span class="footerName"><span>AlanRoth</span></a>
+        em 2023
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./src/script/script.js"></script>
+</body>
+
+</html>
